@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Generador de Pruebas de Seguridad</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .dark {
+      background-color: #0D1117;
+      color: #C9D1D9;
+    }
+    .card-gradient-border {
+      border: 1px solid transparent;
+      background: linear-gradient(to right, #161b22, #161b22) padding-box,
+                  linear-gradient(to right, rgba(56, 139, 253, 0.4), rgba(46, 160, 67, 0.4)) border-box;
+    }
+    .markdown-content ul {
+      list-style-type: disc;
+      padding-left: 20px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .markdown-content ol {
+      list-style-type: decimal;
+      padding-left: 20px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .markdown-content code {
+      background-color: rgba(110, 118, 129, 0.2);
+      padding: 2px 4px;
+      border-radius: 4px;
+      font-family: monospace;
+    }
+  </style>
+  <script type="importmap">
+  {
+    "imports": {
+      "react": "https://esm.sh/react@18.3.1",
+      "react-dom/client": "https://esm.sh/react-dom@18.3.1/client",
+      "@google/genai": "https://esm.sh/@google/genai",
+      "react-markdown": "https://esm.sh/react-markdown@9.0.1",
+      "remark-gfm": "https://esm.sh/remark-gfm@4.0.0"
+    }
+  }
+  </script>
+</head>
+<body class="dark">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

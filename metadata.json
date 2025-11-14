@@ -1,0 +1,5 @@
+
+{
+  "name": "Generador de Pruebas de Seguridad para Redes Sociales",
+  "description": "Una aplicación web que utiliza la API de Gemini para generar casos de prueba de seguridad para plataformas de redes sociales, enfocándose en la identificación y filtrado de contenido dañino."
+}
